@@ -15,6 +15,14 @@
   box-sizing: border-box;
 }
 
+html {
+  overflow-x: hidden;
+}
+
+body {
+  overflow-x: hidden;
+}
+
 /* Animation text  */
 .hero-high {
   text-transform: uppercase;
@@ -131,9 +139,8 @@ img.logo {
   height: 250px;
 }
 .services-card .content h2 {
-  font-size: 1.5rem;
+  font-size: 1.2rem;
   font-weight: 700;
-  /* color: var(--clr); */
   color: #333;
 }
 .services-card .content p {
@@ -344,6 +351,8 @@ form .form-control:focus {
 .img-whatsapp {
   height: 36rem;
   width: 30rem;
+  display: block;
+  margin: auto;
 }
 
 .chat-us {
@@ -482,7 +491,9 @@ form .form-control:focus {
   }
   .img-whatsapp {
     height: 28rem;
+    display: block;
     width: 21rem;
+    margin: auto;
   }
   .services-card {
     margin: 1rem auto;
