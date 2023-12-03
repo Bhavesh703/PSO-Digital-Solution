@@ -436,6 +436,7 @@ form .form-control:focus {
   padding: 0rem;
   background-color: transparent;
   display: inline-flex;
+  color: #000;
 }
 
 .container-second .boxes {
