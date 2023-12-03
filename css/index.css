@@ -36,6 +36,7 @@
   animation: textclip 2s linear infinite;
   display: inline-block;
 }
+
 @keyframes textclip {
   to {
     background-position: 200% center;
@@ -43,6 +44,36 @@
 }
 
 /* Navbar */
+img.logo {
+  mix-blend-mode: darken;
+}
+
+.navbar .navbar-nav .nav-link {
+  color: #000000;
+  font-size: 1.1em;
+}
+.navbar .navbar-nav .nav-link:hover {
+  color: #000000;
+}
+.navbar .navbar-nav .nav-item {
+  position: relative;
+}
+.navbar .navbar-nav .nav-item::after {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  background-color: red;
+  width: 0%;
+  content: "";
+  height: 4px;
+  transition: all 0.5s;
+}
+
+.navbar .navbar-nav .nav-item:hover::after {
+  width: 100%;
+}
 
 /* Services cards */
 
@@ -133,7 +164,7 @@
 }
 
 /* Contact */
-.Terms{
+.Terms {
   color: #ff1361;
   font-weight: 500;
 }
@@ -184,7 +215,6 @@
     transform: translateX(-25%) !important;
   }
 }
-
 
 .slider-title::after {
   content: "";
@@ -369,8 +399,8 @@ form .form-control:focus {
   min-height: 22vh;
 }
 
-.container-second .contact-box:hover p {
-  color: red;
+.container-second .contact-box .fotter-text:hover {
+  color: #ff1361;
 }
 
 .container-second .contact-box:hover {
@@ -383,13 +413,20 @@ form .form-control:focus {
   gap: 0.8rem;
 }
 
-.container-second .contact-box .contact-content p {
+.container-second .contact-box .contact-content .fotter-text {
   margin-bottom: 0;
+  text-decoration: none;
+}
+
+.container-second .contact-box .contact-content a {
+  text-decoration: none;
+  color: inherit;
 }
 
 .container-second .contact-box .contact-content i {
   font-size: 1.5rem;
-  background-color: pink;
+  background-color: #dc3545;
+  color: #fff;
   padding: 1rem;
   border-radius: 50%;
 }
@@ -442,8 +479,15 @@ form .form-control:focus {
   .contact-box {
     width: 95%;
   }
-  .img-whatsapp{
+  .img-whatsapp {
     height: 28rem;
     width: 21rem;
+  }
+  .services-card {
+    margin: 1rem auto;
+  }
+
+  .service-container {
+    display: flex !important;
   }
 }
